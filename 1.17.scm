@@ -1,10 +1,7 @@
 (define (mul a b)
-    (mul-iter a b 0))
-
-(define (mul-iter a b res)
-    (cond   ((= b 0) res)
-            ((even? b) (mul-iter (double a) (halve b) res))
-            ((odd? b) (mul-iter a (- b 1) (+ res a)))))
+    (cond   ((= b 0) 0)
+            ((even? b) (double (mul a (halve b))))
+            ((odd? b) (+ a (mul a (- b 1))))))
 
 (define (double x)
     (+ x x))
