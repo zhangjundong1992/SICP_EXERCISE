@@ -31,12 +31,12 @@
 
 (define (integral-simp f a b n)
     (define (f-simp a b k n)
-        (define v-iter (+ a (* k (/ (- b a) n))))
-
-        (cond ((or (= k 0) (= k n)) (f v-iter))
+        (let ((v-iter (+ a (* k (/ (- b a) n)))))
+            (cond ((or (= k 0) (= k n)) (f v-iter))
               ((odd? k) (* 4 (f v-iter) ))
               ((even? k) (* 2 (f v-iter)))
-        )
+            )
+        )    
     )
 
     (* (/ (- b a) n 3)
