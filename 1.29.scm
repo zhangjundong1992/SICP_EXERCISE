@@ -1,3 +1,4 @@
+;求和公式的过程抽象
 (define (sum term a next b)
     (if (> a b)
         0
@@ -20,6 +21,7 @@
 
 (define (cube x) (* x x x))
 
+;辛普森算法求解积分
 (define (sum-simp term a b k n)
     (if (> k n)
         0
@@ -43,3 +45,5 @@
        (sum-simp f-simp a b 0 n) 
     )
 )
+
+;(integral-simp cube 0 1 100)

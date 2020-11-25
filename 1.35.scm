@@ -1,5 +1,6 @@
 (define tolerance 0.00001)
 
+;求解不动点的一般性方法
 (define (fixed-point f first-guess)
 
     (define (close-enough? v1 v2) 
