@@ -22,6 +22,8 @@
     )
 )
 
-(define (square x) (* x x))
+(define (square x) 
+    (* x x)
+)
 
 ;笔记里写了这是一个无敌的思路，但是现在我已经想不起来是咋回事了
