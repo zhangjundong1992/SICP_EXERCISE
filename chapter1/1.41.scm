@@ -1,4 +1,4 @@
-;将f过程应用两次
+#| 将f过程应用两次 |#
 (define (double f)
     (lambda (x) (f (f x))))
 

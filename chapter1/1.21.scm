@@ -1,4 +1,6 @@
-;求解最小因子
+(load "chapter1/sec1.2.scm")
+
+#| 求解最小因子 |#
 (define (smallest-divisor n)
     (find-divisor n 2))
 
@@ -6,11 +8,5 @@
     (cond   ((> (square test-divisor) n) n)
             ((divides? test-divisor n) test-divisor)
             (else (find-divisor n (+ test-divisor 1)))))
-
-(define (divides? a b)
-    (= (remainder b a) 0))
-
-(define (square x)
-    (* x x))
 
 ;(smallest-divisor 19999)

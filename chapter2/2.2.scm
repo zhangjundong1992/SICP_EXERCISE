@@ -1,12 +1,12 @@
-(load "utilities.scm")
+#| 平面上线段表示 |#
+(define (average x y)
+    (/ (+ x y) 2))
 
 (define (midpoint-segment seg)
     (make-point (average    (x-point (start-segment seg)) 
                             (x-point (end-segment seg)))
                 (average    (y-point (start-segment seg))
-                            (y-point (end-segment seg)))
-    )
-)
+                            (y-point (end-segment seg)))))
 
 (define (make-segment start end)
     (cons start end))
