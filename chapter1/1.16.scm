@@ -1,6 +1,6 @@
 (load "chapter1/sec1.2.scm")
 
-#| 快速幂算法，迭代计算过程联系 |#
+#| 快速幂算法，迭代计算过程练习，求解斐波那契数列 |#
 (define (fast-expt b n)
     (expt-iter b n 1))
 
