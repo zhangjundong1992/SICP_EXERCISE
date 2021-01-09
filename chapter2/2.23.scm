@@ -5,4 +5,5 @@
         (begin  (proc (car items)) 
                 (for-each proc (cdr items)))))
 
-;(for-each (lambda (x) (newline) (display x)) odds)
+(define test
+    (for-each (lambda (x) (newline) (display x)) odds))
